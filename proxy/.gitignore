@@ -1,0 +1,44 @@
+Exclude idea project configuration files
+.idea
+*.iml
+*.ipr
+*.iws
+*.ids
+*.log
+
+#Exclude eclipse project files
+.classpath
+.project
+.settings
+.sass-cache
+
+#Exclude OSX system files
+.DS-Store
+.DS_Store
+web-app/plugins
+
+#Exclude project release file
+*.war
+
+#Exclude classes
+target
+/web-app/WEB-INF/classes
+/target/*/*.class
+out
+static
+
+#Exclude gradle files
+.gradle
+build
+gradle
+
+#Exclude db files
+*.db
+
+cobertura.ser
+.sonar
+*-ide-plugin.xml
+
+.sass-cache
+
+
