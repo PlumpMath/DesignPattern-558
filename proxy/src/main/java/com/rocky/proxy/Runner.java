@@ -1,4 +1,4 @@
-package com.rocky.proxy.staticProxy;
+package com.rocky.proxy;
 
 public interface Runner {
 

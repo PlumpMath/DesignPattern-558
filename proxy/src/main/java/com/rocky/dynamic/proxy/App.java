@@ -1,4 +1,4 @@
-package com.rocky.proxy.dynamicProxy;
+package com.rocky.dynamic.proxy;
 
 public class App {
 
