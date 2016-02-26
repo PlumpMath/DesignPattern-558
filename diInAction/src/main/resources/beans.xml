@@ -1,0 +1,7 @@
+<beans>
+    <bean id="u" class="com.rocky.UserDao" />
+    <bean id="userService" class="com.rocky.UserService" >
+        <property name="userDao" bean="u"/>
+    </bean>
+
+</beans>
