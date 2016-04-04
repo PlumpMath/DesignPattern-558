@@ -1,5 +1,6 @@
 package com.rocky.singleton;
 
+import java.io.*;
 import java.lang.reflect.Constructor;
 
 /**
@@ -15,11 +16,23 @@ public class Client4Demo6 {
         System.out.println(demo);
         System.out.println(demo1);
 
-        Class<SingletonDemo6> clazz = SingletonDemo6.class;
+/*        Class<SingletonDemo6> clazz = SingletonDemo6.class;
         Constructor<SingletonDemo6> constructor = clazz.getDeclaredConstructor(null);
         constructor.setAccessible(true);
 
         SingletonDemo6 singletonDemo6 = constructor.newInstance();
-        System.out.print(singletonDemo6);
+        System.out.print(singletonDemo6);*/
+
+        System.out.print(Client4Demo6.class.getResource("").getPath());
+        FileOutputStream fos = new FileOutputStream("d:/\\sss.txt");
+        ObjectOutputStream os = new ObjectOutputStream(fos);
+        os.writeObject(demo);
+        os.close();
+        fos.close();
+
+        FileInputStream fis = new FileInputStream("d:/\\sss.txt");
+        ObjectInputStream is = new ObjectInputStream(fis);
+        SingletonDemo6 demo6 = (SingletonDemo6)is.readObject();
+        System.out.print(demo6);
     }
 }

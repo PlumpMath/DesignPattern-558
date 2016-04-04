@@ -1,6 +1,8 @@
 package com.rocky.singleton;
 
-public class SingletonDemo6 {
+import java.io.Serializable;
+
+public class SingletonDemo6 implements Serializable{
 
     private static SingletonDemo6 instance;
 
